@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    caret-color: hsl(248, 32%, 49%);
+}
+main{
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url(images/bg-intro-desktop.png);
+}
+.container{
+    min-height: 100vh;
+    padding: 0 7rem;
+    display: flex;
+    align-items: center;
+}
+.container .left{
+    width: 50%;
+    margin-right: 1rem;
+}
+.container .left h1{
+    font-size: 3em;
+    line-height: 3.3rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+.container .left p{
+    color: #fff;
+}
+.container .right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+.container .right .btn{
+    background-color:  hsl(248, 32%, 49%);
+    border: 0;
+    outline: 0;
+    width: 100%;
+    cursor: pointer;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    color: rgba(255, 255, 255, 0.63);
+    margin-bottom: 1.5rem;
+    box-shadow:0 7px 0px 0 rgba(73, 73, 73, 0.226);
+}
+.container .right .btn span{
+    font-weight: 600;
+    color: #fff;
+}
+.container .right form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    padding: 1.5rem 2.5rem 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow:0 7px 0px 0 rgba(73, 73, 73, 0.226);
+    position: relative;
+}
+.container .right form .input-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.container .right form .input-container input{
+    background-color: #fff;
+    outline: 0;
+    border: 0.1rem solid  hsl(246, 25%, 77%);
+    margin-top: 1rem;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    color: #3e3c49 ;
+    position: relative;
+}
+.container .right form .input-container p{
+    display: none;
+    color: hsl(0, 100%, 74%);
+    margin-top: 0.2rem;
+    font-style: italic;
+    align-self: flex-end;
+}
+.container .right form .input-container img{
+    display: none;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    right: 2%;
+    top: 1.6rem;
+    cursor: pointer;
+    pointer-events: none;
+}
+.container .right form input:focus{
+    border-color: hsl(248, 32%, 49%) ;
+}
+.container .right form button{
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    text-transform: uppercase;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow:0 -4px 0px 0 rgba(73, 73, 73, 0.226) inset;
+    margin: 1rem 0;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.container .right form button:hover{
+    opacity: 0.7;
+}
+.container .right p{
+    color: hsl(246, 25%, 77%);
+    font-size: 0.7em;
+    text-align: center;
+    font-weight: 500;
+}
+.container .right p a{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+/*  --------   MEDIA QUERIES --------- */
+@media only screen and (max-width: 1024px) {
+    main{
+        background-image: url(images/bg-intro-mobile.png);
+    }
+    .container{
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem;
+    }
+    .container .right,
+    .container .left{
+        width: 100%;
+    }
+    .container .left{
+        margin-bottom: 5rem;
+        margin-right: 0;
+    }
+}

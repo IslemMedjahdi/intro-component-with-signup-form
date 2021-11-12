@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Intro component with sign up form</title>
+
+</head>
+<body>
+  <main>
+  <div class="container">
+    <div class="left">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
+    </div>
+    <div class="right">
+      <button class="btn" id="btn"><span>Try it free 7 days</span> then $20/mo. thereafter</button>
+      <form action="">
+        <div class="input-container">
+          <input type="text" placeholder="First Name" name="first-name">
+          <img src="images/icon-error.svg" alt="">
+          <p>First Name cannot be empty</p>
+        </div>
+        <div class="input-container">
+          <input type="text" placeholder="Last Name" name="left-name">
+          <img src="images/icon-error.svg" alt="">
+          <p>Last Name cannot be empty</p>
+        </div>
+        <div class="input-container">
+          <input type="email" placeholder="Email Address" name="email">
+          <img src="images/icon-error.svg" alt="" >
+          <p class="error">Looks like this is not an email</p>
+        </div>
+        <div class="input-container">
+          <input type="password" placeholder="Password" name="password">
+          <img src="images/icon-error.svg" alt="">
+          <p>Password cannot be empty</p>
+        </div>  
+        <button type="submit" id="submit-btn">Claim your free trial </button>
+        <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+      </form>
+    </div>
+  </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
